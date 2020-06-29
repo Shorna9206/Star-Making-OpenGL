@@ -9,140 +9,203 @@ glClear (GL_COLOR_BUFFER_BIT);
 */
 
 
-///white star
-glColor3f (1.0, 1.0, 1.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.45, 0.45, 0.0);
-glVertex3f (0.53, 0.42, 0.0);
-glVertex3f (0.53, 0.48, 0.0);
-glEnd();
-glColor3f (1.0, 1.0, 1.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.53, 0.48, 0.0);
-glVertex3f (0.59, 0.48, 0.0);
-glVertex3f (0.56, 0.56, 0.0);
-glEnd();
-glColor3f (1.0, 1.0, 1.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.59, 0.42, 0.0);
-glVertex3f (0.67, 0.45, 0.0);
-glVertex3f (0.59, 0.48, 0.0);
-glEnd();
-glColor3f (1.0, 1.0, 1.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.59, 0.42, 0.0);
-glVertex3f (0.56, 0.34, 0.0);
-glVertex3f (0.53, 0.42, 0.0);
-glEnd();
-glColor3f (1.0, 1.0, 1.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.53, 0.42, 0.0);
-glVertex3f (0.59, 0.42, 0.0);
-glVertex3f (0.59, 0.48, 0.0);
-glVertex3f (0.53, 0.48, 0.0);
-glEnd();
+//Line01
+
+glColor3f(0,0,1);
+    glBegin(GL_LINES);
+        glVertex2f(0,.5);
+        glVertex2f(1,.5);
+            glEnd();
 
 
-///red star
-glColor3f (1.0, 0.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.67, 0.45, 0.0);
-glVertex3f (0.75, 0.42, 0.0);
-glVertex3f (0.75, 0.48, 0.0);
-glEnd();
-glColor3f (1.0, 0.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.75, 0.48, 0.0);
-glVertex3f (0.81, 0.48, 0.0);
-glVertex3f (0.78, 0.56, 0.0);
-glEnd();
-glColor3f (1.0, 0.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.81, 0.42, 0.0);
-glVertex3f (0.89, 0.45, 0.0);
-glVertex3f (0.81, 0.48, 0.0);
-glEnd();
-glColor3f (1.0, 0.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.81, 0.42, 0.0);
-glVertex3f (0.78, 0.34, 0.0);
-glVertex3f (0.75, 0.42, 0.0);
-glEnd();
-glColor3f (1.0, 0.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.75, 0.42, 0.0);
-glVertex3f (0.81, 0.42, 0.0);
-glVertex3f (0.81, 0.48, 0.0);
-glVertex3f (0.75, 0.48, 0.0);
-glEnd();
+//Line02
+
+glColor3f(0,0,1);
+    glBegin(GL_LINES);
+        glVertex2f(.5,0);
+        glVertex2f(.5,1);
+            glEnd();
 
 
-///green star
-glColor3f (0.0, 1.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.64, 0.38, 0.0);
-glVertex3f (0.70, 0.38, 0.0);
-glVertex3f (0.67, 0.45, 0.0);
-glEnd();
-glColor3f (0.0, 1.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.70, 0.32, 0.0);
-glVertex3f (0.78, 0.34, 0.0);
-glVertex3f (0.70, 0.38, 0.0);
-glEnd();
-glColor3f (0.0, 1.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.70, 0.32, 0.0);
-glVertex3f (0.67, 0.23, 0.0);
-glVertex3f (0.64, 0.32, 0.0);
-glEnd();
-glColor3f (0.0, 1.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.56, 0.34, 0.0);
-glVertex3f (0.64, 0.32, 0.0);
-glVertex3f (0.64, 0.38, 0.0);
-glEnd();
-glColor3f (0.0, 1.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.64, 0.32, 0.0);
-glVertex3f (0.70, 0.32, 0.0);
-glVertex3f (0.70, 0.38, 0.0);
-glVertex3f (0.64, 0.38, 0.0);
-glEnd();
+//white star
+glColor3f(1,1,1);
+    glBegin(GL_POLYGON);
+        glVertex2f(.6,.45);
+        glVertex2f(.7,.45);
+        glVertex2f(.7,.55);
+        glVertex2f(.6,.55);
+
+            glEnd();
+
+glColor3f(1,1,1);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.7,.45);
+        glVertex2f(.8,.5);
+        glVertex2f(.7,.55);
+
+            glEnd();
+
+glColor3f(1,1,1);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.7,.55);
+        glVertex2f(.65,.65);
+        glVertex2f(.6,.55);
+
+            glEnd();
+
+glColor3f(1,1,1);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.6,.45);
+        glVertex2f(.6,.55);
+        glVertex2f(.5,.5);
+
+            glEnd();
+
+glColor3f(1,1,1);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.6,.45);
+        glVertex2f(.7,.45);
+        glVertex2f(.65,.35);
+
+            glEnd();
 
 
-///Blue star
-glColor3f (0.0, 0.0, 1.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.67, 0.45, 0.0);
-glVertex3f (0.70, 0.53, 0.0);
-glVertex3f (0.64, 0.53, 0.0);
-glEnd();
-glColor3f (0.0, 0.0, 1.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.70, 0.53, 0.0);
-glVertex3f (0.78, 0.56, 0.0);
-glVertex3f (0.70, 0.59, 0.0);
-glEnd();
-glColor3f (0.0, 0.0, 1.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.64, 0.59, 0.0);
-glVertex3f (0.70, 0.59, 0.0);
-glVertex3f (0.67, 0.67, 0.0);
-glEnd();
-glColor3f (0.0, 0.0, 1.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.56, 0.56, 0.0);
-glVertex3f (0.64, 0.53, 0.0);
-glVertex3f (0.64, 0.59, 0.0);
-glEnd();
-glColor3f (0.0, 0.0, 1.0);
-glBegin(GL_POLYGON);
-glVertex3f (0.64, 0.53, 0.0);
-glVertex3f (0.70, 0.53, 0.0);
-glVertex3f (0.70, 0.59, 0.0);
-glVertex3f (0.64, 0.59, 0.0);
-glEnd();
+
+//green star
+glColor3f(0,1,0);
+    glBegin(GL_POLYGON);
+        glVertex2f(.4,.45);
+        glVertex2f(.3,.45);
+        glVertex2f(.3,.55);
+        glVertex2f(.4,.55);
+
+            glEnd();
+
+glColor3f(0,1,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.3,.45);
+        glVertex2f(.3,.55);
+        glVertex2f(.2,.5);
+
+            glEnd();
+
+glColor3f(0,1,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.3,.55);
+        glVertex2f(.4,.55);
+        glVertex2f(.35,.65);
+
+            glEnd();
+
+glColor3f(0,1,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.4,.45);
+        glVertex2f(.4,.55);
+        glVertex2f(.5,.5);
+
+            glEnd();
+
+glColor3f(0,1,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.4,.45);
+        glVertex2f(.3,.45);
+        glVertex2f(.35,.35);
+
+            glEnd();
+
+
+//Yello star
+glColor3f(1,1,0);
+    glBegin(GL_POLYGON);
+        glVertex2f(.45,.6);
+        glVertex2f(.55,.6);
+        glVertex2f(.55,.7);
+        glVertex2f(.45,.7);
+
+            glEnd();
+
+glColor3f(1,1,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.45,.6);
+        glVertex2f(.55,.6);
+        glVertex2f(.5,.5);
+
+            glEnd();
+
+glColor3f(1,1,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.55,.6);
+        glVertex2f(.55,.7);
+        glVertex2f(.65,.65);
+
+            glEnd();
+
+glColor3f(1,1,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.55,.7);
+        glVertex2f(.45,.7);
+        glVertex2f(.5,.8);
+
+            glEnd();
+
+
+glColor3f(1,1,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.45,.6);
+        glVertex2f(.45,.7);
+        glVertex2f(.35,.65);
+
+            glEnd();
+
+
+//red star
+glColor3f(1,0,0);
+    glBegin(GL_POLYGON);
+        glVertex2f(.45,.4);
+        glVertex2f(.55,.4);
+        glVertex2f(.55,.3);
+        glVertex2f(.45,.3);
+
+            glEnd();
+
+glColor3f(1,0,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.45,.4);
+        glVertex2f(.55,.4);
+        glVertex2f(.5,.5);
+
+            glEnd();
+
+glColor3f(1,0,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.55,.4);
+        glVertex2f(.55,.3);
+        glVertex2f(.65,.35);
+
+            glEnd();
+
+glColor3f(1,0,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.55,.3);
+        glVertex2f(.45,.3);
+        glVertex2f(.5,.2);
+
+            glEnd();
+
+
+
+//Left Triangle
+glColor3f(1,0,0);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(.45,.4);
+        glVertex2f(.45,.3);
+         glVertex2f(.35,.35);
+
+            glEnd();
+
+
+
+
 
 glFlush ();
 }
